@@ -1,7 +1,7 @@
 {
   "manifest_version": "0.3",
   "name": "ai.nimbletools/postgres",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "PostgreSQL MCP server with AI-powered tuning, index optimization, and database health analysis",
   "author": {
     "name": "Crystal DBA (packaged by NimbleBrain Inc)"
