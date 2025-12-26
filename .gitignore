@@ -183,3 +183,7 @@ devenv.local.nix
 # pre-commit
 .pre-commit-config.yaml
 *.sql
+
+# MCPB build artifacts
+deps/
+*.mcpb
