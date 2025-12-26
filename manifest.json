@@ -1,0 +1,17 @@
+{
+  "manifest_version": "0.3",
+  "name": "ai.nimbletools/postgres",
+  "version": "0.3.0",
+  "description": "PostgreSQL MCP server with AI-powered tuning, index optimization, and database health analysis",
+  "author": {
+    "name": "Crystal DBA (packaged by NimbleBrain Inc)"
+  },
+  "server": {
+    "type": "python",
+    "entry_point": "postgres_mcp/__init__.py",
+    "mcp_config": {
+      "command": "python",
+      "args": ["-c", "from postgres_mcp import main; main()"]
+    }
+  }
+}
