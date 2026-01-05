@@ -1,24 +1,29 @@
 {
   "manifest_version": "0.3",
   "name": "ai.nimbletools/postgres",
-  "version": "0.3.1-mcpb.2",
+  "version": "0.3.1-mcpb.3",
   "description": "PostgreSQL MCP server with AI-powered tuning, index optimization, and database health analysis",
   "author": {
     "name": "Crystal DBA (packaged by NimbleBrain Inc)"
+  },
+  "user_config": {
+    "database_uri": {
+      "type": "string",
+      "title": "Database URI",
+      "description": "PostgreSQL connection string (e.g., postgresql://user:password@host:5432/database)",
+      "sensitive": true,
+      "required": true
+    }
   },
   "server": {
     "type": "python",
     "entry_point": "postgres_mcp/__init__.py",
     "mcp_config": {
       "command": "python",
-      "args": ["-c", "from postgres_mcp import main; main()"]
-    }
-  },
-  "user_config": {
-    "DATABASE_URI": {
-      "description": "PostgreSQL connection string (e.g., postgresql://user:password@host:5432/database)",
-      "required": true,
-      "env": "DATABASE_URI"
+      "args": ["-c", "from postgres_mcp import main; main()"],
+      "env": {
+        "DATABASE_URI": "${user_config.database_uri}"
+      }
     }
   }
 }
