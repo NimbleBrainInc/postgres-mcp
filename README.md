@@ -1,3 +1,10 @@
+> [!WARNING]
+> **This repository is archived and no longer maintained.**
+>
+> This MCP server has been removed from the [mpak registry](https://mpak.dev).
+
+---
+
 <div align="center">
 
 <img src="assets/postgres-mcp-pro.png" alt="Postgres MCP Pro Logo" width="600"/>
