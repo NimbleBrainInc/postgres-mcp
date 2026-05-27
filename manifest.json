@@ -1,7 +1,8 @@
 {
   "manifest_version": "0.3",
   "name": "@nimblebraininc/postgres",
-  "version": "0.3.1-mcpb.5",
+  "display_name": "Postgres",
+  "version": "0.3.1-mcpb.6",
   "description": "PostgreSQL MCP server with AI-powered tuning, index optimization, and database health analysis",
   "author": {
     "name": "Crystal DBA (packaged by NimbleBrain Inc)"
